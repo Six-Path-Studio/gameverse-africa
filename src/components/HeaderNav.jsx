@@ -10,6 +10,9 @@ import Mail from "../images/icons/mail.svg"
 import User from "../images/icons/user.svg"
 import Youtube from "../images/icons/youtube.svg"
 
+import {
+    Link
+} from "react-router-dom";
 
 
 const HeaderNav = () => {
@@ -21,31 +24,38 @@ const HeaderNav = () => {
     const navItems = [
         {
             title: "Home",
-            img: Home
+            img: Home,
+            link: "/"
         },
         {
             title: "About Us",
-            img: Job
+            img: Job,
+            link: "/about"
         },
         {
             title: "Speaker",
-            img: Cup
+            img: Cup,
+            link: "/"
         },
         {
             title: "Event Schedule",
-            img: Calender
+            img: Calender,
+            link: "/"
         },
         {
             title: "Contact Us",
-            img: Mail
+            img: Mail,
+            link: "/"
         },
         {
             title: "Socials",
-            img: Youtube
+            img: Youtube,
+            link: "/"
         },
         {
             title: "Become a Sponsor",
-            img: User
+            img: User,
+            link: "/"
         },
     ]
     return (
@@ -62,12 +72,14 @@ const HeaderNav = () => {
 
             <div id="mySidenav" className={`sidenav ${nav ? 'w-80 px-12' : "w-0 px-0"}`}>
                 {nav ? (navItems.map((item) => (
-                    <div className="flex my-8 text-sm">
-                        <div className="mx-5 p-3 rounded-md nav-link">
-                            <img className="w-4 h-4" src={item.img} alt="" />
+                    <Link to={item.link}>
+                        <div className="flex my-8 text-sm">
+                            <div className="mx-5 p-3 rounded-md nav-link">
+                                <img className="w-4 h-4" src={item.img} alt="" />
+                            </div>
+                            <div className="mt-3">{item.title}</div>
                         </div>
-                        <div className="mt-3">{item.title}</div>
-                    </div>
+                    </Link>
                 ))) : (<div></div>)}
             </div>
         </>

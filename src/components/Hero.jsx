@@ -20,7 +20,7 @@ const Hero = () => {
             </div>
             <div className="left">
                 <img src={Circle} className="absolute lg:top-20 lg:left-16 sm:bottom-6 sm:left-20 App-logo w-8 h-8 sm:w-6" alt="" />
-                <img src={Times} className="absolute lg:top-60 sm:bottom-16 left-52 App-logo w-6 h-6 sm:w-4" alt="" />
+                <img src={Times} className="absolute lg:top-60 sm:bottom-0 left-52 App-logo w-6 h-6 sm:w-4" alt="" />
                 <img src={Rectangle} className="absolute lg:bottom-40 lg:left-20 sm:right-10 sm:bottom-2 App-logo w-8 h-8 sm:w-4" alt="" />
                 <img src={Polygon} className="absolute lg:bottom-32 lg:left-96 sm:left-6 sm:bottom-10 App-logo w-8 h-8 sm:w-6" alt="" />
 

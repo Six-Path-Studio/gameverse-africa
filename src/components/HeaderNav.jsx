@@ -61,10 +61,10 @@ const HeaderNav = () => {
     return (
         <>
             <div className="flex justify-between py-8 lg:px-32 px-10">
-                <div className="cursor-pointer sm:w-20">
+                <div className="cursor-pointer sm:w-24">
                     <img onClick={toggleNav} src={Bar} alt="" />
                 </div>
-                <div className="sm:w-20">
+                <div className="sm:w-24">
                     <Link to="/">
                         <img src={Logo} alt="" />
                     </Link>

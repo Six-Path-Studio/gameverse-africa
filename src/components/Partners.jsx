@@ -21,17 +21,17 @@ const Partners = () => {
     return (
         <div className="text-center">
             <div className="w-2/3 mx-auto pt-6">
-                <div className="title text-3xl">Partners</div>
-                <div className="flex my-3 justify-between">
+                <div className="title text-3xl sm:text-xl">Partners</div>
+                <div className="flex flex-wrap my-3 justify-between">
                     {partners.map(partner => (
-                        <div>
+                        <div className="sm:w-1/3">
                             <img src={partner.img} alt="" />
                         </div>
                     ))}
                 </div>
-                <div className="flex my-3 justify-between mt-6">
+                <div className="flex my-3 flex-wrap justify-between mt-6">
                     {partners.map(partner => (
-                        <div>
+                        <div className="sm:w-1/3">
                             <img src={partner.img} alt="" />
                         </div>
                     ))}
@@ -39,10 +39,10 @@ const Partners = () => {
             </div>
             <div className="mt-20 hero">
                 <div className="w-2/3 mx-auto pb-40 pt-8">
-                    <div className="title text-3xl">Community Partners</div>
-                    <div className="flex my-3 justify-between mt-6">
+                    <div className="title text-3xl sm:text-xl">Community Partners</div>
+                    <div className="flex flex-wrap my-3 justify-between mt-6">
                         {partners.map(partner => (
-                            <div>
+                            <div className="sm:w-1/3">
                                 <img src={partner.img} alt="" />
                             </div>
                         ))}

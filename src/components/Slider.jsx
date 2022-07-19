@@ -41,14 +41,14 @@ const Slides = (props) => {
         ]
     };
     return (
-        <div className="w-2/3 mx-auto my-20">
-            <div className="title text-3xl py-3">
+        <div className="lg:w-2/3 mx-auto my-20 sm:m-10">
+            <div className="title lg:text-3xl sm:text-xl py-3">
                 {props.title}
             </div>
             <Slider {...settings}>
                 {props.images.map(image => (
                     <div>
-                        <img className="w-52" src={image.img} alt="" />
+                        <img className="lg:w-52" src={image.img} alt="" />
                     </div>
                 ))}
             </Slider>

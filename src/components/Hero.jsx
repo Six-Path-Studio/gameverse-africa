@@ -11,26 +11,25 @@ const Hero = () => {
     return (
         <motion.div className="hero">
             <HeaderNav />
-            <div className="text-center w-1/2 mx-auto py-40">
-                <div className="title text-6xl leading-tight">Gameverse Africa Conference 22’</div>
-                <div className="text text-base w-96 mx-auto my-4 leading-light">
+            <div className="text-center lg:w-1/2 sm:px-10 mx-auto py-40">
+                <div className="title text-3xl lg:text-6xl leading-tight">Gameverse Africa Conference 22’</div>
+                <div className="text sm:text-xs text-base lg:w-96 mx-auto my-4 leading-light">
                     A universe of game designers, developers, game writers, gamers etc to build, connect and promote the Africa gaming culture.
                 </div>
-                <button className="btn p-3 w-52 ">Coming Soon</button>
+                <button className="btn sm:p-2 lg:p-3 lg:w-52 sm:w-40">Coming Soon</button>
             </div>
             <div className="left">
-                <img src={Circle} className="absolute top-20 left-16 App-logo w-8 h-8" alt="" />
-                <img src={Times} className="absolute top-60 left-52 App-logo w-6 h-6" alt="" />
-                <img src={Rectangle} className="absolute bottom-40 left-20 App-logo w-8 h-8" alt="" />
-                <img src={Polygon} className="absolute bottom-32 left-96 App-logo w-8 h-8" alt="" />
+                <img src={Circle} className="absolute lg:top-20 lg:left-16 sm:bottom-20 sm:left-20 App-logo w-8 h-8 sm:w-6" alt="" />
+                <img src={Times} className="absolute lg:top-60 sm:top-3/4 left-52 App-logo w-6 h-6 sm:w-4" alt="" />
+                <img src={Rectangle} className="absolute lg:bottom-40 lg:left-20 sm:right-10 sm:bottom-20 App-logo w-8 h-8 sm:w-4" alt="" />
+                <img src={Polygon} className="absolute lg:bottom-32 lg;left-96 sm:left-12 sm:bottom-40 App-logo w-8 h-8 sm:w-6" alt="" />
 
             </div>
             <div className="right">
-                <img src={Circle} className="absolute top-60 right-16 App-logo w-8 h-8" alt="" />
-                <img src={Times} className="absolute top-32 right-52 App-logo w-6 h-6" alt="" />
-                <img src={Rectangle} className="absolute bottom-40 right-20 App-logo w-8 h-8" alt="" />
-                <img src={Polygon} className="absolute bottom-60 right-96 App-logo w-8 h-8" alt="" />
-
+                <img src={Circle} className="absolute lg:top-32 lg:right-16 sm:top-20 sm:left-20 App-logo w-8 h-8 sm:w-6" alt="" />
+                <img src={Times} className="absolute lg:top-32 lg:right-52 sm:top-40 sm:right-10 App-logo w-6 h-6 sm:w-4" alt="" />
+                <img src={Rectangle} className="absolute lg:bottom-40 lg:right-20 sm:top-32 sm:left-44 App-logo w-8 h-8 sm:w-6" alt="" />
+                <img src={Polygon} className="absolute lg:bottom-60 lg:right-96 sm:left-10 sm:top-52 App-logo w-8 h-8 sm:w-6" alt="" />
             </div>
         </motion.div>
     );

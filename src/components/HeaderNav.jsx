@@ -60,14 +60,16 @@ const HeaderNav = () => {
     ]
     return (
         <>
-            <div className="flex justify-between py-8 px-32">
-                <div>
+            <div className="flex justify-between py-8 lg:px-32 px-10">
+                <div className="cursor-pointer sm:w-20">
                     <img onClick={toggleNav} src={Bar} alt="" />
                 </div>
-                <div>
-                    <img src={Logo} alt="" />
+                <div className="sm:w-20">
+                    <Link to="/">
+                        <img src={Logo} alt="" />
+                    </Link>
                 </div>
-                <div className="inter pt-1">BECOME A SPONSOR</div>
+                <div className="inter lg:pt-1 sm:text-xs sm:hidden">BECOME A SPONSOR</div>
             </div>
 
             <div id="mySidenav" className={`sidenav ${nav ? 'w-80 px-12' : "w-0 px-0"}`}>

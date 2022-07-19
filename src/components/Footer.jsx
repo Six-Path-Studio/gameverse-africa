@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <div className="border-t border-white flex justify-evenly p-3">
             <img src={Logo} alt="" />
-            <div className="text-lg text">CONFERENCE 2022</div>
+            <div className="text-lg title">CONFERENCE 2022</div>
             <div className="text-lg text">Privacy Policy</div>
             <div className="flex justify-between w-44">
                 <img className="w-6" src={Mail} alt="" />

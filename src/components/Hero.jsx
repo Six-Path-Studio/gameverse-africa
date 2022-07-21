@@ -16,7 +16,7 @@ const Hero = () => {
                 <div className="text sm:text-xs text-base lg:w-96 mx-auto my-4 leading-light">
                     A universe of game designers, developers, game writers, gamers etc to build, connect and promote the Africa gaming culture.
                 </div>
-                <button className="btn sm:p-2 lg:p-3 lg:w-52 sm:w-40">Coming Soon</button>
+                <button className="btn title sm:p-2 lg:p-3 w-52">Coming Soon</button>
             </div>
             <div className="left">
                 <img src={Circle} className="absolute lg:top-20 lg:left-16 sm:bottom-6 sm:left-20 App-logo w-8 h-8 sm:w-6" alt="" />

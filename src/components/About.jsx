@@ -12,7 +12,7 @@ const AboutUs = () => {
                 <div className="my-5 text text-base sm:text-xs">Gameverse Africa Conference 22 is a gathering that is geared towards building a strong game ecosystem in Nigeria and beyond. It is a conference that would feature activities like Esport, workshop, Game showcase etc, promoting the African culture through the gaming industry.
                     <br /><br />
                 Our aim is to expand the gaming industry in africa, with a better and inclusive representative in the global gaming industry.</div>
-                <button className="btn lg:p-3 sm:p-2 lg:w-52 sm:w-40">Coming Soon</button>
+                <button className="btn title lg:p-3 sm:p-2 w-52  ">Coming Soon</button>
 
             </div>
         </div>

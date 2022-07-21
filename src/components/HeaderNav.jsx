@@ -48,7 +48,7 @@ const HeaderNav = () => {
             link: "/"
         },
         {
-            title: "Socials",
+            title: "Blog",
             img: Youtube,
             link: "/"
         },

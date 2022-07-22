@@ -1,3 +1,5 @@
+import React, { useState } from 'react'
+
 import AboutUs from "../components/About"
 import Join from "../components/Join"
 import Footer from "../components/Footer"
@@ -11,8 +13,7 @@ import Img5 from "../images/old-meets-new/img5.png"
 import Img6 from "../images/old-meets-new/img6.png"
 import Story from "../images/story.png"
 
-function About() {
-
+function About() { 
   return (
     <div className="App">
       <div className="hero">
@@ -58,7 +59,7 @@ function About() {
       </div>
 
       <div className="  my-20">
-        <Join title="Join our Community on Discord" text="Click on the button below to join" btn="Discord Server" />
+        <Join title="Join our Community on Discord" text="Click on the button below to join" btn="Discord Server" link="https://discord.gg/T7xdedJyKY" />
       </div>
       <Footer />
     </div>

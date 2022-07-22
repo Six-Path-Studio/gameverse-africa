@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Circle from "../images/shapes/circle.svg"
 import Times from "../images/shapes/times.svg"
 import Rectangle from "../images/shapes/Rectangle.svg"
@@ -8,8 +8,9 @@ import HeaderNav from "./HeaderNav"
 
 
 const Hero = () => {
+    
     return (
-        <motion.div className="hero">
+        <div className="hero">
             <HeaderNav />
             <div className="text-center lg:w-1/2 sm:px-10 mx-auto py-40">
                 <div className="title text-3xl lg:text-6xl leading-tight">Gameverse Africa Conference 22’</div>
@@ -31,7 +32,7 @@ const Hero = () => {
                 <img src={Rectangle} className="absolute lg:bottom-40 lg:right-20 sm:top-32 sm:left-44 App-logo w-8 h-8 sm:w-6" alt="" />
                 <img src={Polygon} className="absolute lg:bottom-60 lg:right-96 sm:left-10 sm:top-52 App-logo w-8 h-8 sm:w-6" alt="" />
             </div>
-        </motion.div>
+        </div>
     );
 }
 

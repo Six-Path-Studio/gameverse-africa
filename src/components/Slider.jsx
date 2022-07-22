@@ -26,7 +26,8 @@ const Slides = (props) => {
                     slidesToScroll: 1,
                     initialSlide: 2,
                     infinite: true,
-                    dots: false
+                    dots: false,
+                    autoplay: true,
                 }
             },
             {
@@ -35,7 +36,8 @@ const Slides = (props) => {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: false
+                    dots: false,
+                    autoplay: true,
                 }
             }
         ]

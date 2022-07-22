@@ -9,6 +9,7 @@ import Job from "../images/icons/job.svg"
 import Mail from "../images/icons/mail.svg"
 import User from "../images/icons/user.svg"
 import Youtube from "../images/icons/youtube.svg"
+import Close from "../images/icons/close.svg"
 
 import {
     Link
@@ -16,10 +17,10 @@ import {
 
 
 const HeaderNav = () => {
+
     const [nav, setNav] = useState(false)
     const toggleNav = () => {
         setNav(!nav)
-        console.log('hello', nav)
     }
     const navItems = [
         {
@@ -50,7 +51,8 @@ const HeaderNav = () => {
         {
             title: "Blog",
             img: Youtube,
-            link: "/"
+            link: null,
+            web: "https://medium.com/@gameverseafrica"
         },
         {
             title: "Become a Sponsor",
@@ -73,15 +75,27 @@ const HeaderNav = () => {
             </div>
 
             <div id="mySidenav" className={`sidenav ${nav ? 'w-80 px-12' : "w-0 px-0"}`}>
+                <div onClick={toggleNav}>
+                    <img className="ml-auto" src={Close} alt="" />
+                </div>
                 {nav ? (navItems.map((item) => (
-                    <Link to={item.link}>
+                    item.link === null ? (<a href={item.web}>
                         <div className="flex my-8 text-sm">
                             <div className="mx-5 p-3 rounded-md nav-link">
                                 <img className="w-4 h-4" src={item.img} alt="" />
                             </div>
                             <div className="mt-3">{item.title}</div>
                         </div>
-                    </Link>
+                    </a>) : (
+                        <Link to={item.link}>
+                            <div className="flex my-8 text-sm">
+                                <div className="mx-5 p-3 rounded-md nav-link">
+                                    <img className="w-4 h-4" src={item.img} alt="" />
+                                </div>
+                                <div className="mt-3">{item.title}</div>
+                            </div>
+                        </Link>
+                    )
                 ))) : (<div></div>)}
             </div>
         </>

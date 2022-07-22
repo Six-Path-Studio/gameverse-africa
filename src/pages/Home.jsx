@@ -19,6 +19,7 @@ import Img7 from "../images/concentration/img4.png"
 
 
 function Home() {
+  
 const images = [
   {img: Img},
   {img: Img1},

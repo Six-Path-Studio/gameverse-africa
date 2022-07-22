@@ -24,15 +24,15 @@ const Partners = () => {
                 <div className="title text-3xl sm:text-xl">Partners</div>
                 <div className="flex flex-wrap my-3 justify-between">
                     {partners.map(partner => (
-                        <div className="sm:w-1/3">
-                            <img src={partner.img} alt="" />
+                        <div className="sm:w-1/3 sm:mt-3">
+                            <img className="w-32" src={partner.img} alt="" />
                         </div>
                     ))}
                 </div>
-                <div className="flex my-3 flex-wrap justify-between mt-6">
+                <div className="flex my-3 flex-wrap justify-between lg:mt-6 ">
                     {partners.map(partner => (
-                        <div className="sm:w-1/3">
-                            <img src={partner.img} alt="" />
+                        <div className="sm:w-1/3 sm:mt-3">
+                            <img className="w-32" src={partner.img} alt="" />
                         </div>
                     ))}
                 </div>
@@ -42,8 +42,8 @@ const Partners = () => {
                     <div className="title text-3xl sm:text-xl">Community Partners</div>
                     <div className="flex flex-wrap my-3 justify-between mt-6">
                         {partners.map(partner => (
-                            <div className="sm:w-1/3">
-                                <img src={partner.img} alt="" />
+                            <div className="sm:w-1/3 sm:mt-3">
+                                <img className="w-32" src={partner.img} alt="" />
                             </div>
                         ))}
                     </div>

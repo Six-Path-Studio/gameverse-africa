@@ -7,7 +7,9 @@ const Join = (props) => {
         <div className="lg:w-2/5 mx-auto text-center">
             <div className="title leading-10 sm:text-xl lg:text-4xl">{props.title}</div>
             <div className="text lg:text-base sm:text-xs my-3">{props.text}</div>
-            <button className="btn title lg:p-3 sm:p-2 w-52">{props.btn}</button>
+            <a href={props.link}>
+                <button className="btn title lg:p-3 sm:p-2 w-52">{props.btn}</button>
+            </a>
         </div>
         <div>
             <img className="absolute lg:top-12 sm:w-10 w-20 lg:left-32 sm:top-0  App-logo" src={PadLeft} alt="" />

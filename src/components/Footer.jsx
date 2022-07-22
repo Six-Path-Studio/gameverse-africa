@@ -14,10 +14,18 @@ const Footer = () => {
             <div className="text-lg title  sm:text-sm sm:my-3">CONFERENCE 2022</div>
             <div className="text-lg text  sm:text-sm sm:my-3">Privacy Policy</div>
             <div className="flex justify-between w-44 sm:mx-auto sm:my-3">
-                <img className="w-6" src={Mail} alt="" />
-                <img className="w-6" src={Discord} alt="" />
-                <img className="w-6" src={Insta} alt="" />
-                <img className="w-6" src={Twitter} alt="" />
+                <a href="mailto:gamerverseafrica@gmail.com">
+                    <img className="w-6" src={Mail} alt="" />
+                </a>
+                <a href="https://discord.gg/T7xdedJyKY" target="_blank">
+                    <img className="w-6" src={Discord} alt="" />
+                </a>
+                <a href="https://www.instagram.com/gameverse_africa" target="_blank">
+                    <img className="w-6" src={Insta} alt="" />
+                </a>
+                <a href="https://twitter.com/gameverse_afric" target="_blank">
+                    <img className="w-6" src={Twitter} alt="" />
+                </a>
             </div>
         </div>
     );
